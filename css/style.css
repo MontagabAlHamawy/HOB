@@ -353,7 +353,7 @@ body {
 .vid .con .ico .sr {
     width: 60px;
     height: 60px;
-    border: 5px solid wheat;
+    border: 5px solid #fff;
     border-radius: 50%;
     cursor: pointer;
     transition: 1s;
