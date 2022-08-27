@@ -11,6 +11,10 @@ a {
     text-decoration: none;
 }
 
+p, h1, h4 {
+    cursor: context-menu;
+}
+
 body {
     margin: 0;
     padding: -29PX;
@@ -27,15 +31,17 @@ body {
     justify-content: space-between;
     padding: 10px 20px;
     background-color: var(--color-e);
+    z-index: 3000;
 }
 
 .hider .img img {
     width: 70px;
     height: 30px;
+    cursor: pointer;
 }
 
 .hider .links a {
-    margin: 0 10px;
+    padding: 20px 25px;
     color: var(--text-color);
     font-size: 20px;
     font-weight: 400;
@@ -50,7 +56,63 @@ body {
 }
 
 .hider .links a:hover {
-    border-bottom: 2px var(--text-color) solid;
+    background-color: white;
+    width: 100%;
+}
+
+.hider .log {
+    display: none;
+}
+
+.hider .log span {
+    background-color: #ffe;
+    margin-bottom: 5px;
+    height: 3px;
+}
+
+.hider .log span:first-child {
+    width: 100%;
+}
+
+.hider .log span:nth-child(2) {
+    width: 60%;
+    transition: 1s;
+}
+
+.hider .log span:nth-child(3) {
+    width: 100%;
+}
+
+.hider .log:hover span:nth-child(2) {
+    width: 100%;
+}
+
+.hider .log .linkr {
+    opacity: 0;
+    margin: 14px 0;
+    background-color: var(--color-e);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hider .log .linkr a {
+    padding: 10px 30px;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 400;
+    transition: 0.3s;
+    width: 80%;
+}
+
+.hider .log:hover .linkr {
+    animation: ll 0.8s ease-in-out forwards;
+}
+
+.hider .log .linkr a:hover {
+    background-color: white;
+    width: 50%;
 }
 
 @media (max-width: 788px) {
@@ -60,20 +122,29 @@ body {
         flex-direction: column;
     }
 
-    .hider .img img {
-        margin: 10px 0 20px;
+    .hider .links {
+        display: none;
     }
 
-    .hider .links a {
-        margin-bottom: 10px;
-        padding: 0 8px 0 8px;
+    .hider .log {
+        display: flex;
+        width: 30px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        margin: 0;
     }
 }
 
-@media (max-width: 400px) {
-    .hider .links a {
-        margin-bottom: 10px;
-        padding: 0 3px 0 3px;
+@keyframes ll {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 
@@ -139,7 +210,7 @@ body {
         align-items: center;
         flex-direction: column;
         margin-left: 0;
-        top: 270px;
+        top: 240px;
     }
 
     .hedd .texte .booton {
@@ -236,13 +307,13 @@ body {
         font-size: 17px;
         font-weight: 400;
         margin: 5px 0;
-         width: 100%;
+        width: 100%;
     }
 
     .all .th .co a {
         font-size: 20px;
         margin: 8px 0;
-         width: 100%;
+        width: 100%;
     }
 
     .all .th {
@@ -271,10 +342,9 @@ body {
         margin-top: 1px;
         font-size: 20px;
         font-weight: 400;
-         width: 100%;
+        width: 100%;
     }
 }
-
 
 /* end all */
 /* start vid */
