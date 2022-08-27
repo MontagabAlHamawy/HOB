@@ -35,11 +35,18 @@ body {
 }
 
 .hider .links a {
-    margin: 0 5px;
+    margin: 0 10px;
     color: var(--text-color);
     font-size: 20px;
     font-weight: 400;
     transition: 0.3s;
+}
+
+@media (max-width: 350px) {
+    .hider .links a{
+        margin: 0 5px;
+        
+    }
 }
 
 .hider .links a:hover {
