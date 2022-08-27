@@ -42,7 +42,7 @@ body {
     transition: 0.3s;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 350px) {
     .hider .links a {
         margin: 0 5px;
 
@@ -204,57 +204,6 @@ body {
     height: 200px;
 }
 
-@media (max-width: 400px) {
-    .all .th .co h1 {
-        font-size: 20px;
-    }
-
-    .all .th .co p {
-        font-size: 17px;
-        font-weight: 400;
-    }
-}
-
-@media (max-width: 980px) {
-    .all .th {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-    }
-
-    .all {
-        display: flex;
-        justify-content: center;
-    }
-
-    .all .th .co {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .all .th .co h1 {
-        margin: 20px 0px;
-    }
-
-    .all .th .co p {
-        margin: 5px 0;
-    }
-
-    .all .th .co a {
-        margin: 8px 0;
-    }
-
-    .all .th .co .botto {
-        margin: 10px 0 0 0;
-    }
-
-    .all .th .co .botto h3 {
-        margin-top: 1px;
-    }
-}
-
 @media (max-width: 560px) {
     .all .th {
         padding: 5px;
@@ -274,6 +223,52 @@ body {
         width: 200px;
     }
 }
+
+@media (max-width: 980px) {
+    .all .th .co h1 {
+        margin: 20px 0px;
+        font-size: 20px;
+    }
+
+    .all .th .co p {
+        font-size: 17px;
+        font-weight: 400;
+        margin: 5px 0;
+    }
+
+    .all .th .co a {
+        font-size: 20px;
+        margin: 8px 0;
+    }
+
+    .all .th {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .all {
+        display: flex;
+        justify-content: center;
+    }
+
+    .all .th .co {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .all .th .co .botto {
+        margin: 10px 0 0 0;
+    }
+
+    .all .th .co .botto h3 {
+        margin-top: 1px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+
 
 /* end all */
 /* start vid */
@@ -378,7 +373,7 @@ body {
     font-weight: bold;
 }
 
-@media (max-width:400px) {
+@media (max-width:350px) {
     .vid .con h4 {
         font-size: 20px;
     }
@@ -389,7 +384,7 @@ body {
         display: none;
     }
 
-    .vid .con .ico .text p{
+    .vid .con .ico .text p {
         font-size: 16px;
     }
 }
